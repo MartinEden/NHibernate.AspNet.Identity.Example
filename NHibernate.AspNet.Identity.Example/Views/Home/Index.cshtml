@@ -1,0 +1,15 @@
+﻿@model NHibernateAspNetIdentityExample.Models.Identity.User
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<p style="font-size: x-large;">
+    You are now logged in as <strong>@Model.UserName</strong>
+</p>
+
+@using (Html.BeginForm("LogOff", "Account"))
+{
+<p>
+    <button>Log off</button>
+</p>
+}

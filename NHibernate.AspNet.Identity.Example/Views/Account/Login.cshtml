@@ -1,0 +1,26 @@
+﻿@model NHibernateAspNetIdentityExample.Models.Identity.LoginViewModel
+@{
+    ViewBag.Title = "Login";
+}
+
+<h2>Login</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary()
+    <table>
+        <tr>
+            <td>@Html.LabelFor(m => m.UserName)</td>
+            <td>@Html.EditorFor(m => m.UserName)</td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.Password)</td>
+            <td>@Html.EditorFor(m => m.Password)</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button style="width: 100%">Login</button></td>
+        </tr>
+    </table>
+}
+
+@Html.ActionLink("Register", "Register")

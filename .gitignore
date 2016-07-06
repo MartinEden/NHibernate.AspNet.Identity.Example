@@ -1,0 +1,5 @@
+*/bin/*
+*/obj/*
+.vs/*
+packages/
+NHibernate.AspNet.Identity.Example/NHibernate.AspNet.Identity.Example.csproj.user
